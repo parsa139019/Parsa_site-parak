@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پارسا پرکتون | پرک</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Tahoma,Arial,sans-serif;
+  background:#080b12;color:#f5f7ff;line-height:1.9;
+}
+body:before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(0,229,255,.13),transparent 30%),
+    radial-gradient(circle at 80% 70%,rgba(125,70,255,.15),transparent 30%);
+}
+nav{
+  position:fixed;top:0;width:100%;z-index:10;
+  background:rgba(8,11,18,.72);backdrop-filter:blur(14px);
+  border-bottom:1px solid #ffffff12;
+}
+.nav{max-width:1100px;margin:auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:bold;color:#6ee7ff}
+nav a{color:#ddd;text-decoration:none;margin-right:20px;transition:.2s}
+nav a:hover{color:#6ee7ff}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:110px 20px 60px}
+.hero .box{max-width:850px}
+.badge{display:inline-block;padding:6px 14px;border:1px solid #6ee7ff55;border-radius:999px;color:#6ee7ff;background:#6ee7ff0d;margin-bottom:18px}
+h1{font-size:clamp(42px,8vw,82px);line-height:1.15}
+h1 span{color:#6ee7ff}
+.hero p{font-size:20px;color:#b9c0d0;margin:20px auto 30px;max-width:700px}
+.btn{
+  display:inline-block;padding:12px 24px;border-radius:12px;
+  background:#6ee7ff;color:#061018;text-decoration:none;font-weight:bold;
+  box-shadow:0 0 30px #6ee7ff33;transition:.25s
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 0 40px #6ee7ff66}
+section{max-width:1100px;margin:auto;padding:90px 22px}
+.title{font-size:34px;margin-bottom:30px}.title span{color:#6ee7ff}
+.card{
+  background:#ffffff08;border:1px solid #ffffff12;border-radius:20px;
+  padding:28px;box-shadow:0 15px 50px #0004
+}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.skill{padding:22px;border-radius:18px;background:#ffffff07;border:1px solid #ffffff10}
+.skill h3{margin-bottom:8px;color:#fff}.skill p{color:#aeb6c7}
+.project{min-height:170px}.project h3{color:#6ee7ff;margin-bottom:8px}
+.contact{text-align:center}
+footer{text-align:center;color:#7e8799;padding:30px;border-top:1px solid #ffffff10}
+@media(max-width:700px){nav .links{display:none}.nav{justify-content:center}.hero p{font-size:17px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav">
+    <div class="logo">PARK • پرک</div>
+    <div class="links">
+      <a href="#about">درباره من</a>
+      <a href="#skills">مهارت‌ها</a>
+      <a href="#projects">پروژه‌ها</a>
+      <a href="#contact">تماس</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="box">
+    <div class="badge">به سایت شخصی من خوش آمدید</div>
+    <h1>من <span>پارسا پرکتون</span> هستم</h1>
+    <p>ملقب به «پرک» — علاقه‌مند به دنیای رایانه، بازی‌های ویدیویی و ساختن آینده‌ای بزرگ.</p>
+    <a class="btn" href="#about">بیشتر درباره من</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="title">درباره <span>من</span></h2>
+  <div class="card">
+    <p>من پارسا پرکتون هستم، ملقب به پرک. به خواست خدا می‌خواهم در آینده به یک فرد مهم و موفق تبدیل شوم. به دنیای رایانه و بازی علاقه دارم و دوست دارم مهارت‌هایم را روزبه‌روز بیشتر کنم و در زمینه فناوری پیشرفت کنم.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="title">مهارت‌ها و <span>علاقه‌مندی‌ها</span></h2>
+  <div class="grid">
+    <div class="skill"><h3>🎮 بازی</h3><p>علاقه و تجربه در بازی‌های ویدیویی.</p></div>
+    <div class="skill"><h3>💻 رایانه</h3><p>علاقه‌مند به کامپیوتر و دنیای فناوری.</p></div>
+    <div class="skill"><h3>🚀 یادگیری</h3><p>تلاش برای یادگیری مهارت‌های جدید و پیشرفت.</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="title">پروژه‌های <span>من</span></h2>
+  <div class="grid">
+    <div class="card project"><h3>پروژه‌های آینده</h3><p>اینجا می‌توانم پروژه‌های کامپیوتری، سایت‌ها و کارهای آینده‌ام را معرفی کنم.</p></div>
+    <div class="card project"><h3>دنیای گیم</h3><p>بخش مخصوص معرفی بازی‌ها، تجربه‌ها و دستاوردهای گیمینگ من.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="title">ارتباط با <span>من</span></h2>
+  <div class="card">
+    <p>برای اضافه کردن شماره، ایمیل یا شبکه‌های اجتماعی، اطلاعات موردنظر را اینجا قرار می‌دهم.</p>
+  </div>
+</section>
+
+<footer>© 2026 Parsa Parktoon — PORK</footer>
+</body>
+</html>
